@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&family=Tagesschrift&family=Young+Serif&display=swap"
+        rel="stylesheet">
+    <style>
+        .spicy-rice-regular {
+            font-family: "Spicy Rice", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            background-color: aqua;
+            /* display: flex;
+                align-items: center;
+                justify-content: center; */
+        }
+
+        div {
+            display: flex;
+            align-content: center;
+            flex-direction: column;
+            width: 50vw;
+            border: 10px solid black;
+            padding: 20px;
+            background-color: antiquewhite;
+            font-family: "Spicy Rice";
+            font-size: 25px;
+            margin: 0 auto;
+            margin-bottom: 25px;
+        }
+
+        h3,
+        h5 {
+            font-size: 30px;
+        }
+
+        button {
+            display: flex;
+            align-content: center;
+            margin: 0 auto;
+            width: 25vw;
+            height: 8vh;
+            align-items: center;
+            justify-content: center;
+            font-family: "Spicy Rice";
+            border: 5px solid black;
+            font-size: 25px;
+            background-color: antiquewhite;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            cursor: pointer;
+            transform: scale(1.2);
+            transition: all 0.3s ease;
+            opacity: 0.9;
+        }
+
+        button:active {
+            transform: scale(1);
+        }
+
+        li {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>
+            Headings
+        </h1>
+        <p>Headings in HTML are similar to headings in other types of media. For example, in newspapers, large headings
+            are typically used to capture a reader’s attention. Other times, headings are used to describe content, like
+            the title of a movie or an educational article.</p>
+        <p>
+            HTML follows a similar pattern. In HTML, there are six different headings, or heading elements.
+            Preview: Docs There are 6 heading elements in HTML. They are labeled 1-6, with 1 being the largest sized
+            heading and 6 being the smallest. These are great for labeling different sections in a website.
+            Headings
+            can be used for a variety of purposes, like titling sections, articles, or other forms of content.
+        </p>
+        <ol>
+            <p>
+                The following is the list of heading elements available in HTML. They are ordered from largest to
+                smallest in size.
+            </p>
+            <li>&lth1&gt — used for main headings. All other smaller headings are used for subheadings.</li>
+            <li>&lth2&gt This is the second-level heading, used right after &lth1&gt.
+                It’s for main section titles on a webpage.</li>
+            <li>&lth3&gt Used for sub-sections under an &lth2&gt heading.
+                It’s slightly smaller and shows a lower level of importance.</li>
+            <li>&lth4&gt Represents a sub-section within an &lth3&gt heading.
+                Used when you need more detailed structure.</li>
+            <li>&lth5&gt Shows even less importance, used for deep sub-points.
+                Rarely used unless your content has many levels.</li>
+            <li>&lth6&gt The smallest and least important heading.
+                Used when you need very fine structure or detail.</li>
+        </ol>
+        <p>
+            The following example code uses a headline intended to capture a reader’s attention. It uses the largest
+            heading available, the main heading element:
+        </p>
+        <img src="Opera Snapshot_2025-05-05_174951_www.codecademy.com.png" alt="image of code of a heading 1">
+    </div>
+    <button onclick="toNextLesson ()">Next</button>
+</body>
+<script>
+    function toNextLesson () {
+        window.location.href= "buttons.html";
+    }
+</script>
+</html>
