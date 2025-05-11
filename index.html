@@ -1,140 +1,239 @@
-<!-- <h1>
-    Hello world
-</h1>
-
-
-<h1>
-    Hello world
-</h1>
-
-
-
-<H1>MUABARK  HO</H1>
-
-
-<h2>Hello</h2>
-<h3>world</h3>
-<h4>ok
-</h4>
-<h5>difference</h5>
-
-<p>Lorem ipsum dolor sit.</p>
-<button>Subscribe</button>
-
-<a href="https://www.google.com/">han han han</a>
-<p>this is a paragraph <a href="https://bpsweb.org/">this is the word that  have a link in it</a></p> -->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Road to Coder</title>
+    <title>Road to coder</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&family=Tagesschrift&family=Young+Serif&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Spicy+Rice&family=Tagesschrift&family=Young+Serif&display=swap"
+        rel="stylesheet">
     <style>
-        .spicy-rice-regular {
-            font-family: "Spicy Rice", serif;
+        .cal-sans-regular {
+            font-family: "Cal Sans", sans-serif;
             font-weight: 400;
             font-style: normal;
         }
 
-        body {
-            background-color: aqua;
-            /* display: flex;
-            align-items: center;
-            justify-content: center; */
+        /* html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+} */
+        html {
+            margin: 0;
+            padding: 0;
         }
 
-        div {
-            display: flex;
-            align-content: center;
-            flex-direction: column;
-            width: 50vw;
-            border: 10px solid black;
-            padding: 20px;
-            background-color: antiquewhite;
-            font-family: "Spicy Rice";
-            font-size: 25px;
-            margin: 0 auto;
-            margin-bottom: 25px;
+        body {
+            font-family: "Cal Sans";
+            background-color: aqua;
         }
-        h3, h5 {
-            font-size: 30px;
-        }
-        button {
+
+        .hero {
             display: flex;
-            align-content: center;
-            margin: 0 auto;
-            width: 25vw;
-            height: 8vh;
-            align-items: center;
             justify-content: center;
-            font-family: "Spicy Rice";
-            border: 5px solid black;
-            font-size: 25px;
+            align-items: center;
+            height: 60vh;
             background-color: antiquewhite;
-            transition: all 0.3s ease;
+            flex-direction: column;
+            border-radius: 2em;
+            border: 1em groove black;
         }
+        
+        h1 {
+            text-shadow:10px 10px gray ;
+            font-size: 7em;
+            margin: 0%;
+            padding: 0%;
+        }
+        
+        .btn {
+            display: flex;
+        }
+
+        button {
+            border: 5px solid aqua;
+            font-family: "Spicy Rice";
+            margin-right: 25px;
+            margin-left: 25px;
+            background-color: blue;
+            width: 25vw;
+            height: 12vh;
+            border-radius: 1em;
+            font-size: 1.2em;
+        }
+
         button:hover {
-            cursor: pointer;
             transform: scale(1.2);
             transition: all 0.3s ease;
-            opacity: 0.9;
+            cursor: pointer;
+            box-shadow: 20px 20px 20px gray;
+            /* transition: opacity 0.5s linear; */
         }
+        
         button:active {
+            opacity: 0.7;
             transform: scale(1);
+            transition: all 0.3s ease;
+        }
+        
+        .p-hero {
+            margin: 0 0 20px 0;
+            padding: 0 0 20px 0;
+            color: grey;
+            font-size: 0.7em;
+            text-decoration: underline;
+
+        }
+
+        .questions {
+            background-color: antiquewhite;
+            width: fit-content;
+            height: fit-content;
+            border: 5px ridge black;
+            margin-top: 5vh;
+            border-radius: 0.3em;
+            margin-bottom: 5px;
+              font-size: 1.5em;
+        }
+
+        .answers {
+            background-color: antiquewhite;
+            width: 50vw;
+            font-size: 1.5em;
+            transform: translate(17vw);
+            border: 5px ridge black;
+            height: fit-content;
+            font-size: 1.3em;
+        }
+
+        .questions h2,
+        .answers h4 {
+            margin: 0;
+            /* Removes default h2/h4 margins */
+            padding: 10px;
+            /* Adds internal spacing instead */
+        }
+
+        hr {
+            height: 0.25vh;
+            margin: 30px;
+        }
+
+        .end {
+            display: flex;
+            padding: 0;
+        }
+
+        .about {
+            width: 45vw;
+            background-color: antiquewhite;
+            height: fit-content;
+            margin-top: 10px;
+            padding: 1%;
+        }
+
+        .line-vertical {
+            height: 42vh;
+            width: 0.3vw;
+            color: black;
+            background-color: black;
+            margin: 0.1vh 3vw;
+        }
+
+        .contact {
+            width: 45vw;
+            background-color: antiquewhite;
+            height: fit-content;
+            margin-top: 10px;
+            padding: 1%;
+        }
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
 
 <body>
-    <div class="div-1">
-        <h1>
-            So what exactly is HTML?
-        </h1>
-        <p>
-            HTML provides structure to the content appearing on a website,
-            such as images, text, or videos
-            Right-click on any page on the internet, choose
-            “Inspect,” and you'll see HTML in a panel of your screen.
-        </p>
-        <h1>
-            HTML stands for HyperText Markup Language:
-        </h1>
-        <ol>
-            <li>
-                A markup language is a computer language that defines
-                the structure and presentation of raw text.
-                In HTML, the computer can interpret raw text that is
-                wrapped in HTML elements
-            </li>
-            <li>
-                HyperText is text displayed on a computer or device
-                that provides access to other text through links, also
-                known as hyperlinks.
-            </li>
-        </ol>
-        <p>
-            Learning HTML is the first step in creating websites,
-            but even a bit of knowledge can help you inject code
-            snippets into newsletter, blog or website templates.
-            As you continue learning, you can layer HTML with CSS
-            and JavaScript to create visually compelling and dynamic
-            websites. But for now, we’re going to focus on how to add
-            and modify basic content on a page, like text, images,
-            and videos. Don’t worry if the websites look ugly — we’re
-            just getting started.
-        </p>
+    <div class="hero">
+        <h1>Road to Coder</h1>
+        <p class="p-hero">This is the only website you need to learn everything about coding</p>
+        <div class="btn">
+            <button onclick="toNextLesson ()">
+                Start Learning
+            </button>
+            <button>
+                View Road Map
+            </button>
+        </div>
     </div>
-    <button onclick="toNextLesson ()">Next</button>
+    <div class="questions">
+        <h2>
+            Why this website?
+        </h2>
+    </div>
+    <div class="answers">
+        <h4>
+            Because you're tired of switching between 10 tabs just to understand one topic. Road to Coder brings
+            everything — tutorials, resources, cheat sheets, and project guides — into one simple, structured, and
+            distraction-free place. Whether you're a beginner or brushing up your skills, this is your complete roadmap
+            to becoming a confident coder
+        </h4>
+    </div>
+    <div class="questions">
+        <h2>
+            What will I learn?
+        </h2>
+    </div>
+    <div class="answers">
+        <h4>
+            From HTML to Advanced JavaScript, from backend development to deployment, and even Git, APIs, databases, and
+            dev tools — you'll learn everything step-by-step with real resources taken from top YouTubers, blogs, books,
+            and pro developers. No fluff, just what actually matters.
+        </h4>
+    </div>
+    <div class="questions">
+        <h2>
+            Is this free?
+        </h2>
+    </div>
+    <div class="answers">
+        <h4>
+            Yes — and always will be. This platform is built for learners, by a learner, to eliminate the confusion and
+            chaos of finding trusted content. No logins, no hidden charges, just pure learning.
+        </h4>
+    </div>
+    <hr>
+    <div class="end">
+        <section class="about">
+            <h2>About Road to Coder</h2>
+            <p>Created by a passionate self-taught developer, Road to Coder is a free learning hub that compiles the
+                best of YouTube, blogs, and books — all in one place. It’s a journey and you’re invited to join it.</p>
+        </section>
+        <div class="line-vertical"></div>
+        <section class="contact">
+            <h2>Contact</h2>
+            <p>Have a suggestion or want to contribute? Reach out at the <a
+                    href="https://github.com/tay008">GitHub Repo</a>.</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Road to Coder. Made with ❤️ for learners by Tay008.</p>
+      </footer>      
 </body>
 <script>
     function toNextLesson () {
-        window.location.href= "headings.html";
+        window.location.href= "intro-to-html.html";
     }
 </script>
 </html>
