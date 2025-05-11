@@ -14,19 +14,70 @@
         @media only screen and (max-width: 600px) {
             .hero {
                 text-align: center;
-                height: 90vh;
-                width: 50vw;
-                font-size: 1rem;
+                height: fit-content;
+                width: 90vw;
+                padding: 10px;
+                margin: 10px auto;
+                overflow-wrap: break-word;
+                font-size: 10px;
             }
+            
             .main-heading {
-                font-size: 0.1em;
-                margin: auto;
+                margin: 0 auto;
+                word-wrap: break-word; 
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-left: 10px;
             }
+
+            .main-topic {
+                height: fit-content;
+                font-size: 10px;
+            }
+
+            button {
+                height: 10%;
+                
+
+            }
+
+            h2 {
+                width: auto;
+                font-size: 1.2em;
+            }
+
+            h4 {
+                background-color: antiquewhite;
+                margin-bottom: 5vh;
+                border: 5px inset black;
+                width: 90%;
+                margin: 10px auto;
+                padding: 6px;
+                box-sizing: border-box;
+                word-wrap: break-word;
+                text-align: center;
+                font-size: 1.3em;
+                margin: 0;
+                padding: 6px;
+                text-overflow: clip;
+                text-align: center;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow-x: hidden;
         }
 
         html {
             margin: 0;
         }
+
         body {
             font-family: "cal sans";
             font-size: 1.4rem;
@@ -34,33 +85,38 @@
             margin: 0;
             height: 500vh;
         }
+
         .hero {
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            height: 70vh;
-            width: 95vw;
+            height: 60vh;
+            /* width: 95vw; */
             background-color: antiquewhite;
             border: 1rem groove black;
-            border-radius: 1rem;
-            margin: 2vh 1vw;
+            border-radius: 2rem;
+            margin: 20px;
             text-overflow: ellipsis;
             margin: 0 auto;
         }
+
         .hero-back {
             margin-top: 2vh;
         }
-            .main-heading {
-                margin: 0;
-                padding: 0%;
-                font-size: 6em;
-                text-shadow:10px 10px gray ;
+
+        .main-heading {
+            margin: 0;
+            padding: 0%;
+            font-size: 6em;
+            text-shadow: 10px 10px gray;
         }
+
         .btn {
             display: flex;
         }
-         button {
+
+        button {
             border: 5px solid aqua;
             font-family: "Spicy Rice";
             margin-right: 25px;
@@ -78,12 +134,13 @@
             cursor: pointer;
             box-shadow: 20px 20px 20px gray;
         }
-        
+
         button:active {
             opacity: 0.7;
             transform: scale(1);
             transition: all 0.3s ease;
         }
+
         .p-hero {
             /* transition: opacity 0.5s linear; */
             margin: 0 0 20px 0;
@@ -91,7 +148,8 @@
             color: grey;
             font-size: 0.7em;
             text-decoration: underline;
-          }
+        }
+
         .main-topic {
             width: fit-content;
             height: 15vh;
@@ -102,7 +160,7 @@
             text-shadow: 2px 2px aquamarine;
             display: flex;
             align-items: center;
-            margin-top:8vh ;
+            margin-top: 8vh;
             margin-bottom: 2vh;
         }
 
@@ -111,42 +169,46 @@
             background-color: antiquewhite;
             width: fit-content;
             font-size: 1.5em;
-            margin-left:3% ;
+            margin-left: 3%;
             padding: 0;
             margin-top: 10vh;
             text-decoration: wavy;
         }
-        
+
         h4 {
             background-color: antiquewhite;
             margin-bottom: 5vh;
             border: 5px inset black;
             width: 60vw;
+            transform: translate(17vw);
             font-size: 1.3em;
             /* display: flex;
             justify-content: center;
             align-items: center*/
-            margin: 0; 
+            margin: 0;
             padding: 6px;
-            transform: translate(17vw);
-             text-overflow: clip;
-             text-align: center;
+            text-overflow: clip;
+            text-align: center;
         }
+
         .point-1 {
             margin-bottom: 20px;
             padding: 0%;
         }
-    span {
-        text-decoration: wavy;
-        padding: 0;
-        margin: 0;
-    }
-    h2 h4 ,
-    .questions {
-        margin: 10px;
-        padding: 0
-    }
-     hr {
+
+        span {
+            text-decoration: wavy;
+            padding: 0;
+            margin: 0;
+        }
+
+        h2 h4,
+        .questions {
+            margin: 10px;
+            padding: 0
+        }
+
+        hr {
             height: 0.25vh;
             margin: 30px;
         }
@@ -162,10 +224,11 @@
             height: fit-content;
             margin-top: 10px;
             padding: 1%;
+            border: 5px ridge black;
         }
 
         .line-vertical {
-            height: 42vh;
+            height: 60vh;
             width: 0.3vw;
             color: black;
             background-color: black;
@@ -178,7 +241,9 @@
             height: fit-content;
             margin-top: 10px;
             padding: 1%;
+            border: 5px ridge black;
         }
+
         footer {
             display: flex;
             justify-content: center;
@@ -190,17 +255,17 @@
 <body>
     <div class="hero-back">
         <div class="hero">
-        <h1 class="main-heading">Road to coder</h1>
-        <p class="p-hero">This is the only website you need to learn everything about coding</p>
-       <div class="btn">
-         <button onclick="toNextLesson ()">
-            Next Topic
-        </button>
-        <button onclick="toHomePage () ">
-            Home
-        </button>
-       </div>
-    </div>
+            <h1 class="main-heading">Road to coder</h1>
+            <p class="p-hero">This is the only website you need to learn everything about coding</p>
+            <div class="btn">
+                <button onclick="toNextLesson ()">
+                    Next Topic
+                </button>
+                <button onclick="toHomePage () ">
+                    Home
+                </button>
+            </div>
+        </div>
     </div>
     <div class="main-topic">
         <h1>
@@ -210,54 +275,57 @@
     <hr>
     <div class="point-1">
         <h2 class="questions">
-        What is HTML: &nbsp;
-    </h2>
-    <h4>
-        HTML, which stands for HyperText Markup Language, is the standard markup language for creating web pages. Think
-        of it as the foundation upon which all websites are built. It's not a programming language; instead, it's a
-        language that uses a system of tags to structure and format content on a webpage
-    </h4>
-</div>
-<hr>
-    <div>
-        <h2 class="questions">
-        Understanding HyperText: &nbsp;
-    </h2>
-    <h4>
-        Hypertext refers to the ability to link different pieces of content together. This is achieved through
-        hyperlinks, allowing users to navigate between different web pages or sections within a page.
-    </h4>
-    </div>
-    <hr>
-   <div>
-     <h2 class="questions">
-        What is a Markup Language? &nbsp;
-    </h2>
-    <h4>
-        A markup language is a computer language that defines the structure and presentation of raw text. In HTML, the
-        computer can interpret raw text that is wrapped in HTML elements.
-    </h4>
-   </div>
-   <hr>
-    <div>
-        <h2 class="questions">
-        HTML as the Building Block of the Web: &nbsp;
-    </h2>
-    <h4>
-        HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and
-        structure of web content. Other technologies besides HTML are generally used to describe a web page's
-        appearance/presentation (CSS) or functionality/behavior (JavaScript).
-    </h4>
+            What is HTML: &nbsp;
+        </h2>
+        <h4>
+            HTML, which stands for HyperText Markup Language, is the standard markup language for creating web pages.
+            Think
+            of it as the foundation upon which all websites are built. It's not a programming language; instead, it's a
+            language that uses a system of tags to structure and format content on a webpage
+        </h4>
     </div>
     <hr>
     <div>
         <h2 class="questions">
-        Purpose of HTML: &nbsp;
-    </h2>
-    <h4>
-        HTML provides structure to the content appearing on a website, such as images, text, or videos. Right-click on
-        any page on the internet, choose “Inspect,” and you’ll see HTML in a panel of your screen.
-    </h4>
+            Understanding HyperText: &nbsp;
+        </h2>
+        <h4>
+            Hypertext refers to the ability to link different pieces of content together. This is achieved through
+            hyperlinks, allowing users to navigate between different web pages or sections within a page.
+        </h4>
+    </div>
+    <hr>
+    <div>
+        <h2 class="questions">
+            What is a Markup Language? &nbsp;
+        </h2>
+        <h4>
+            A markup language is a computer language that defines the structure and presentation of raw text. In HTML,
+            the
+            computer can interpret raw text that is wrapped in HTML elements.
+        </h4>
+    </div>
+    <hr>
+    <div>
+        <h2 class="questions">
+            HTML as the Building Block of the Web: &nbsp;
+        </h2>
+        <h4>
+            HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and
+            structure of web content. Other technologies besides HTML are generally used to describe a web page's
+            appearance/presentation (CSS) or functionality/behavior (JavaScript).
+        </h4>
+    </div>
+    <hr>
+    <div>
+        <h2 class="questions">
+            Purpose of HTML: &nbsp;
+        </h2>
+        <h4>
+            HTML provides structure to the content appearing on a website, such as images, text, or videos. Right-click
+            on
+            any page on the internet, choose “Inspect,” and you’ll see HTML in a panel of your screen.
+        </h4>
     </div>
     <hr>
     <h2>
@@ -269,7 +337,7 @@
         JavaScript to create visually compelling and dynamic websites. But for now, we’re going to focus on how to add
         and modify basic content on a page, like text, images, and videos.
     </h4>
-     <hr>
+    <hr>
     <div class="end">
         <section class="about">
             <h2>About Road to Coder</h2>
@@ -279,20 +347,21 @@
         <div class="line-vertical"></div>
         <section class="contact">
             <h2>Contact</h2>
-            <p>Have a suggestion or want to contribute? Reach out at the <a
-                    href="https://github.com/tay008">GitHub Repo</a>.</p>
+            <p>Have a suggestion or want to contribute? Reach out at the <a href="https://github.com/tay008">GitHub
+                    Repo</a>.</p>
         </section>
     </div>
     <footer>
         <p>&copy; 2025 Road to Coder. Made with ❤️ for learners by Tay008.</p>
-      </footer>      
+    </footer>
 </body>
 <script>
-    function toNextLesson () {
+    function toNextLesson() {
         window.location.href = "key-concept.html";
     }
-    function toHomePage () {
+    function toHomePage() {
         window.location.href = "index.html"
     }
 </script>
+
 </html>
